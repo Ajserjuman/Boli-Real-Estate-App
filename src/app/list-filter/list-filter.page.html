@@ -12,9 +12,9 @@
       <ion-title size="large">Properties</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button (click)="goToFilter()">Filter</ion-button>
-  @if (records?.length) {
-  <ion-card class="property-card" *ngFor="let item of records" (click)="goToDetail(item.id)">
+  <ion-searchbar [debounce]="1000" (ionInput)="handleInput($event)"></ion-searchbar>
+  @if (results?.length) {
+  <ion-card class="property-card" *ngFor="let item of results" (click)="goToDetail(item.id)">
 
     <div class="card-row">
 
@@ -64,7 +64,7 @@
 }
 @else{
   <ion-item>
-  <ion-label>Loading...</ion-label>
+  <ion-label>No Matching Records</ion-label>
   <ion-spinner></ion-spinner>
 </ion-item>
 }

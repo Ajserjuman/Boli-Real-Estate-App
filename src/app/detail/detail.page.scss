@@ -1,0 +1,75 @@
+.property-card {
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+  background-color: white;
+}
+
+// .property-swiper {
+//   width: 100%;
+//   max-width: 420px;      /* 👈 standard card width on desktop */
+//   height: 220px;         /* 👈 fixed height prevents overflow */
+//   margin: 0 auto;        /* 👈 centers swiper horizontally */
+// }
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.property-img {
+  width: 100%;
+  max-width: 700px;      /* 👈 never exceed card width */
+  max-height: 620px;         /* 👈 match swiper height */
+  object-fit: cover;     /* 👈 no stretching */
+  border-radius: 12px;
+}
+
+
+
+// .property-img {
+//   border-radius: 12px;
+//   object-fit: cover;
+// }
+
+.title {
+  font-weight: 600;
+  margin: 0;
+  color: black;
+}
+
+.subtitle {
+    color: black;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;   /* 👈 controls space between each span */
+  font-size: 12px;
+  color: #666;
+}
+
+.description{
+    color: black;
+}
+
+.button-wrapping{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.call-button{
+//     display: flex;
+//   justify-content: center;
+  width: 140px;
+  height: 40px; 
+}
+
+.price {
+  font-size: 35px;
+  font-weight: 700;
+  color: #16a34a;
+}
